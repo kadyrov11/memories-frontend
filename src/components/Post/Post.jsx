@@ -36,7 +36,7 @@ const Post = ({ setCurrentId, _id, noUpdate, ...post }) => {
       </div>
       <CardContent className={classes.content}>
         <Link to={`/posts/${_id}`} title="Post page" >
-          <Typography className={classes.title} variant="body2" color="textPrimary">{post.title}<UnfoldMore/></Typography>   
+          <Typography className={classes.title} variant="body2" color="textPrimary" style={{textDecoration: 'underline'}}>{post.title}<UnfoldMore color='primary'/></Typography>   
         </Link>
         <Typography variant="body2" color="textSecondary" gutterBottom>{post.message}</Typography>
       </CardContent>
